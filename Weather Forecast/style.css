@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    /* justify-content: center; */
+    background: url("images/Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* overflow: hidden; */
+}
+/* nav{
+    background: black;
+    opacity: 0%;
+    width: 100%;
+    text-align: center;
+    color: white ;
+    position: fixed;
+    height: 100%;
+} */
+
+.head{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+
+.clockbox{
+    margin-top: 400px;
+    margin-bottom: 10px;
+    background-color: slateblue;
+    border-radius: 10px ;
+    opacity: 80%;
+    width: 450px;
+}
+
+.clock{
+    display: flex;
+    margin: 10px;
+}
+
+.clock div{
+    margin: 10px;
+    position: relative;
+}
+
+.clock span{
+    width: 100px;
+    height: 80px;
+    background: slateblue;
+    opacity: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    background: darkblue;
+    border-radius: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.calender{
+    background-color: slateblue;
+    opacity: 80%;
+    color: white;
+    width: 450px;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);
+
+}
+
+.month{
+    width: 100%;
+    height: 120px;
+    background-color: darkblue;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
+    border-radius: 10px 10px 0 0;
+}
+
+.month h1{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.month p{
+    font-size: 16px;
+
+}
+
+.weekdays{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.weekdays div{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+
+.days div{
+    font-size: 14px;
+    margin: 3px;
+    width: 57.5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days div:hover:not(.empty){
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.today{
+    background-color: darkblue;
+}
+
+
+.card{
+    background: slateblue;
+    color: white;
+    opacity: 80%;
+    padding: 25px;
+    border-radius: 10px;
+    width: 450px;
+    margin: 10px;
+    
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin: 5px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color:darkblue ;
+    transition: 0.2 ease-in-out;
+}
+
+.search-bar{
+    border: none;
+    outline: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    background: whitesmoke;
+    color: darkblue;
+    font-size: 120%;
+    width: 80%;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+
+.description{
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.weather{
+    margin-left: 20px;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+footer{
+    background-color: slateblue;
+    width: 100%;
+    opacity: 80%;
+    text-align: center;
+    color: white;
+    margin: 200px;
+    padding: 10px;
+}
+
